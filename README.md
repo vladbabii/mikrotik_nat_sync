@@ -25,6 +25,7 @@ where
 * TAG - this will be the text with which all comments will starts; comment format will be "automananged{...<json>...}
 * DEBUG - if set to any value longer than 1 character it will be enabled
 * DELAY - how long to wait after one round of processing before starting the next one
+* SOURCE - url or file path (starting with ./) that contains the configuration to be applied on the router. If a file path is used you must mount your folder to /app/files/ container folder
 
 
 # JSON payload structure
