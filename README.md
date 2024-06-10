@@ -38,7 +38,9 @@ where
   }
 }
 ```
+
 # JSON Payload example
+In this example we forward external port 80 to internal 192.168.50.100:80
 ```
 {
   "manual": {
@@ -50,3 +52,9 @@ where
   }
 }
 ```
+
+# Usage
+1. on router create a nat rule that is attached and has comment 'automanaged{"source":"template","id":"template"}' and disable it. The values in this rule will be used as a template when creating/updating rules generated from the json payload (for example if you set the chain to dstnat then all the rules from json that to do not have chain set will use dstnat value)
+2. deploy this via docker (or however else you like)
+
+
