@@ -17,6 +17,15 @@ source can also be an url
 ```
 $SOURCE='http://example.com/nat-list.json';
 ```
+
+where
+* HOST - ip of router. uses default http api port
+* USER / PASS - username and password to access the router
+* TAG - this will be the text with which all comments will starts; comment format will be "automananged{...<json>...}
+* DEBUG - if set to any value longer than 1 character it will be enabled
+* DELAY - how long to wait after one round of processing before starting the next one
+
+
 # JSON payload structure
 ```
 {
